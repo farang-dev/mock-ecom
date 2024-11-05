@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock E-commerce Site</title>
+  <link rel="stylesheet" href="styles.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KD87CJGN');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD87CJGN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <h1>Welcome to Our Store</h1>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Products</h2>
+      <div class="product" onclick="viewProduct('Product 1')">
+        <h3>Product 1</h3>
+        <p>$10.00</p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+      </div>
+      <div class="product" onclick="viewProduct('Product 2')">
+        <h3>Product 2</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+      </div>
+    </section>
+    <section id="cart">
+      <h2>Cart</h2>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
